@@ -1,61 +1,113 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: gilroy;
-}
-html,body{
-height: 100%;
-width: 100%;
-}
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: gilroy, sans-serif;
+    }
 
-#section1{
-  width: 100%;
-  height: 100%;
-position: relative;
-}
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
 
-nav{
-display: flex;
-align-items: center;
-justify-content: space-between;  
-padding: 40px 50px;
-}
-.part2{
-display: flex;
-align-items: center;
-justify-content: space-between;  
-gap: 50px;
-}
+    /* ✅ fixed: use .section1 instead of #section1 */
+    .section1 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
 
-nav h1{
-  font-size: 40px;
-}
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 50px;
+    }
 
-nav h4{
- font-weight: 500;
-  font-size: 20px;
-}
+    .part2 {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
 
-nav button {
-  padding:  15px 20px;
-  font-size: 20px;
-  border-radius: 5px;
-  border:1px solid #000;
-  font-weight: 600;
-  background-color: transparent;
-}
+    nav h1 {
+      font-size: 40px;
+    }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    nav h4 {
+      font-weight: 500;
+      font-size: 20px;
+      cursor: pointer;
+    }
 
-.rotate-infinite {
-  animation: rotate 3s linear infinite;
-  display: inline-block;
-}
+    nav button {
+      padding: 15px 20px;
+      font-size: 20px;
+      border-radius: 5px;
+      border: 1px solid #000;
+      font-weight: 600;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    /* 🔄 rotation for the sun */
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .rotate-infinite {
+      animation: rotate 3s linear infinite;
+      display: inline-block;
+    }
+
+    
+    .center {
+      height: 80%;
+      padding: 80px;
+      flex: 1; 
+      width: 100%;
+      display: flex;
+    }
+
+    .center-part1 {
+      margin-top: 10px;
+      height: 100%;
+      width: 50%;
+    }
+    
+    .center-part2 {
+      height: 100%;
+      width: 50%;
+      position: relative;
+    }
+    .center-part1 h1{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 50px;
+    }
+    .center-part1 p{
+      font-size: 25px;
+      width: 95%;
+    }
+    .center-part1 button{
+      margin-top: 25px;
+      font-size: 25px;
+      background-color: black;
+      color: #fff;
+      border-radius: 10px;
+      padding: 20px 35px;
+    }
+
+    .center-part2 img{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      margin-top: -30px;
+    }
