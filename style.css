@@ -70,8 +70,8 @@
 
     
     .center {
-      height: 80%;
-      padding: 80px;
+      height: 70%;
+      padding: 70px;
       flex: 1; 
       width: 100%;
       display: flex;
@@ -108,6 +108,29 @@
     .center-part2 img{
       position: absolute;
       height: 100%;
-      width: 100%;
+      width: 90%;
       margin-top: -30px;
+      margin-left: 20px;
     }
+
+    .section1bottom{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .section1bottom img{
+      width: 200px;
+      height: 150px;
+      padding:40px 40px;
+    }
+
+  .section2 .services{
+    background-color: red;
+    padding: 40px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .services h3{
+    background-color: #9AE975;
+  }
