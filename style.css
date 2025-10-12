@@ -124,8 +124,12 @@
   .services p {
      width: 40%;
      font-size: 15px;
+     font-weight: 600;
+     padding: 10px;
   }
-
+ .black{
+  background-color: black;
+ }
 .container{
   height: 80%;
   width: 100%;
@@ -140,8 +144,53 @@
   flex-shrink:0;
   height: 250px;
   width: 47%;
-  background-color: red;
+  padding: 50px;
   border: 3px solid black;
   border-radius: 10px;
+  display: flex;
   box-shadow: 0px 15px 0px black;
+}
+
+.elem-part1{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 80px;
+  flex-direction: column;
+}
+.elem-part2{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.elem-part2 img{
+  height: 150px;
+}
+
+.elem-part1 h2{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: monospace;
+  width: 70%;
+  padding: 0px 5px;
+  background-color: #9AE975;
+  border-radius: 10px;
+}
+
+.elem-part1 h4{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 10px;
+  font-weight: 700;
+}
+.elem-part1 h4 i {
+  padding: 5px;
+  background-color: black;
+  color: #fff;
+  border-radius: 50%;
 }
