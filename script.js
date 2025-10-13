@@ -62,7 +62,8 @@
          scroller:"body",
          scrub:2,
          start:"top 50%",
-         end:"top 0"
+         markers:true,
+         end:"top -60%"
         }
       })
       
