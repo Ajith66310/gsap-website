@@ -45,9 +45,8 @@ const page2Animation = () => {
   const tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: ".section2",
-      start: "top 70%",
+      start: "top 50%",
       end: "bottom 20%",
-      scrub: 2,
       // markers: true, // Uncomment for debugging
     },
     defaults: { ease: "power2.out", duration: 0.8 },
